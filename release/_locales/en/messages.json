@@ -1,0 +1,11 @@
+{
+  "appName": {
+    "message": "ipLeak"
+  },
+  "appDesc": {
+    "message": "Monitor the things you left behind"
+  },
+  "appTooltip": {
+    "message" : "Monitor the things you left behind"
+  }
+}
