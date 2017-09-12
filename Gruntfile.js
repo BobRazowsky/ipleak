@@ -21,7 +21,6 @@ module.exports = function(grunt) {
                     {expand: true, src: ['img/*'], dest: 'release/'},
                     {expand: true, src: ['css/*.css'], dest: 'release/'},
                     {expand: true, src: ['_locales/**'], dest: 'release/'},
-                    {expand: true, src: ['sounds/*'], dest: 'release/'},
                     {expand: true, src: ['vendors/*'], dest: 'release/'},
                     {expand: true, src: ['manifest.json'], dest: 'release/'}
                 ]
@@ -35,8 +34,6 @@ module.exports = function(grunt) {
                 },
                 files: {
                     'release/css/popup.css':'less/popup.less',
-                    'release/css/donate.css':'less/donate.less',
-                    'release/css/options.css':'less/options.less'
                 }
             }
         },
@@ -59,7 +56,7 @@ module.exports = function(grunt) {
         compress: {
             main: {
                 options: {
-                    archive: 'oldPackages/<%= pkg.short %><%= pkg.version %>.zip'
+                    archive: 'packages/<%= pkg.short %><%= pkg.version %>.zip'
                 },
                 files: [
                     {src: ['release/**'], dest: '/'}
@@ -67,7 +64,7 @@ module.exports = function(grunt) {
             },
             firefox: {
                 options: {
-                    archive: 'oldPackages/<%= pkg.short %><%= pkg.version %>_firefox.zip'
+                    archive: 'packages/<%= pkg.short %><%= pkg.version %>_firefox.zip'
                 },
                 files: [{
                     src: ['**/*'],

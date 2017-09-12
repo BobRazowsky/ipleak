@@ -1,7 +1,7 @@
 {
     "name": "__MSG_appName__",
     "description": "__MSG_appDesc__",
-    "version": "0.0.2.0",
+    "version": "0.0.0.1",
     "author": "Ari",
     "default_locale": "en",
     "background": {
@@ -19,7 +19,7 @@
         "19": "img/icon.png"
     },
     "options_page": "options.html",
-    "permissions": [],
+    "permissions": ["https://ipleak.net/"],
     "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
     "manifest_version": 2
 }
