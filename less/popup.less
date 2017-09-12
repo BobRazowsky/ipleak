@@ -6,12 +6,37 @@ body {
     max-width: 100%;
     overflow-x: hidden;
 
+    #map {
+        border-radius: 50px;
+    }
+
     #main {
+
+        table {
+            .title {
+                color: gray;
+            }
+
+            .top {
+                td {
+                    border-top: none;
+                }
+            }
+        }
+
         #ip {
-            border-bottom: 1px solid #dae1e9;
+            border-bottom: 2px solid #dae1e9;
             text-align: center;
-            margin-top: 5px;
-            margin-bottom: 5px;
+            vertical-align: middle;
+            font-size: 18px;
+            height: 40px;
+            margin-top: 10px;
+            margin-bottom: 12px;
+            font-family: monospace;
+        }
+
+        #localIP {
+            text-align: center;
         }
 
         #country {
@@ -20,6 +45,18 @@ body {
 
         #isp {
             text-align: center;
+        }
+
+        #flag {  
+            height: 30px;
+            width: 30px;
+            border-radius: 15px;
+            border: 2px solid #dae1e9;
+
+            position: absolute;
+            left: 50%;
+            margin-left: -15px;
+            top: 34px;
         }
     }
 }

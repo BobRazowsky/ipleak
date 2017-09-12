@@ -6,15 +6,41 @@ body {
   max-width: 100%;
   overflow-x: hidden;
 }
+body #map {
+  border-radius: 50px;
+}
+body #main table .title {
+  color: gray;
+}
+body #main table .top td {
+  border-top: none;
+}
 body #main #ip {
-  border-bottom: 1px solid #dae1e9;
+  border-bottom: 2px solid #dae1e9;
   text-align: center;
-  margin-top: 5px;
-  margin-bottom: 5px;
+  vertical-align: middle;
+  font-size: 18px;
+  height: 40px;
+  margin-top: 10px;
+  margin-bottom: 12px;
+  font-family: monospace;
+}
+body #main #localIP {
+  text-align: center;
 }
 body #main #country {
   text-align: center;
 }
 body #main #isp {
   text-align: center;
+}
+body #main #flag {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  border: 2px solid #dae1e9;
+  position: absolute;
+  left: 50%;
+  margin-left: -15px;
+  top: 34px;
 }

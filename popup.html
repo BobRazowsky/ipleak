@@ -10,8 +10,23 @@
 <body>
     <div id="main">
         <p id="ip"></p>
-        <p id="country"></p>
-        <p id="isp"></p>
+        <img src="" id="flag">
+        <table class="table">
+          <tbody>
+            <tr class="top">
+              <td class="title">Country</td>
+              <td id="country">Country</td>
+            </tr>
+            <tr>
+              <td class="title">ISP</td>
+              <td id="isp">ISP</td>
+            </tr>
+            <tr>
+              <td class="title">Local IP</td>
+              <td id="localIP">Local IP</td>
+            </tr>
+          </tbody>
+        </table>
     </div>
     <iframe
       id="map"
@@ -20,6 +35,7 @@
       frameborder="0" style="border:0"
       src="" allowfullscreen="false">
     </iframe>
+    <iframe id="iframe" sandbox="allow-same-origin" style="display: none"></iframe>
     <script type="text/javascript" src="js/popup.js"></script>
 </body>
 </html>

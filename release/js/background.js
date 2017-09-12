@@ -1,0 +1,1 @@
+chrome.runtime.onConnect.addListener(function(e){console.log("yolo"),e.onMessage.addListener(function(e,o){"WebRTCSnoop"===e[0]&&(console.log(new Date,e[1],e[2]),chrome.pageAction.show(o.sender.tab.id),chrome.pageAction.setTitle({tabId:o.sender.tab.id,title:"This site uses WebRTC"}))})});

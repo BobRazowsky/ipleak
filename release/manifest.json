@@ -6,8 +6,15 @@
     "default_locale": "en",
     "background": {
         "scripts": ["js/background.js"],
-        "persistent": true
+        "persistent": false
     },
+    "content_scripts": [ {
+        "js": [ "js/snoop.js" ],
+        "matches": [ "http://*/*", "https://*/*" ],
+        "all_frames": true,
+        "match_about_blank": true,
+        "run_at": "document_start"
+    } ],
     "browser_action": {
         "default_title": "__MSG_appTooltip__",
         "default_icon": {
