@@ -1,0 +1,25 @@
+{
+    "name": "__MSG_appName__",
+    "description": "__MSG_appDesc__",
+    "version": "0.0.2.0",
+    "author": "Ari",
+    "default_locale": "en",
+    "background": {
+        "scripts": ["js/background.js"],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_title": "__MSG_appTooltip__",
+        "default_icon": {
+            "19" : "img/icon.png"
+        },
+        "default_popup": "popup.html"
+    },
+    "icons": {
+        "19": "img/icon.png"
+    },
+    "options_page": "options.html",
+    "permissions": [],
+    "content_security_policy": "script-src 'self' https://ssl.google-analytics.com; object-src 'self'",
+    "manifest_version": 2
+}
